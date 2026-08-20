@@ -16,6 +16,15 @@
 - Gate boundary = stop, hand over a review packet, wait. No work on gate N+1 before gate N is accepted.
 - Accepted gate may still be revised later; revision is a new gate, not a reopen.
 
+## Boy Scout rule
+
+- Leave every file the gate touches cleaner than it was found — the stale name, the dead branch, the comment that lies, the duplicated constant.
+- **Bounded by the code the gate already changes.** Mess inside it is fixed and ships with the gate. Mess outside it is logged `noted, not done` and never widens the diff.
+- Cleanup is behaviour-preserving. A tidy-up that changes semantics is a separate topic and a separate gate.
+- Mess larger than the change carrying it, or load-bearing in a way that isn't obvious → stop and say so. A rewrite wearing a cleanup's clothes is a spec defect.
+- The review packet names every Boy Scout fix separately from the specced change, so review can read them apart.
+- Applies to these convention files: a rule this gate proved wrong gets corrected in this gate, not deferred to retro.
+
 ## Clean code — modern reading, not ceremony
 
 - Clarity and small honest units. Not class-per-noun, not one-method-per-line decomposition.
@@ -23,7 +32,7 @@
 - No interface, port, or extension point without a second implementation or a real test seam **today**.
 - **YAGNI** — build exactly what the spec asks. No config flags, hooks, or generality for a future that is not specced.
 - **KISS** — the simplest construction that satisfies the spec wins. Extra complexity needs a stated reason in the spec, not a comment defending it afterwards.
-- Dead code, unused parameters, and orphaned abstractions get deleted in the gate that reveals them, never left "just in case".
+- Dead code, unused parameters, and orphaned abstractions get deleted in the gate that touches them, never left "just in case". Revealed but untouched → `noted, not done` (see Boy Scout rule).
 - Use the existing shared primitive instead of re-implementing it locally — never hand-roll a timer, poller, retry, or cache that already exists.
 - Cross-cutting utilities are designed domain-agnostic from the start, not built for the first domain and generalised later.
 - Wiring a new pattern in covers every consuming call site in one pass — no follow-up PRs unless asked.

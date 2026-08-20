@@ -17,7 +17,7 @@ Every question the flow skills would otherwise ask you lives here. The rule:
 
 | File | Answers |
 |------|---------|
-| [general.md](general.md) | Working agreement, gates, clean code (YAGNI/KISS), comments, code-level style, design system |
+| [general.md](general.md) | Working agreement, gates, Boy Scout rule, clean code (YAGNI/KISS), comments, code-level style, design system |
 | [architecture.md](architecture.md) | Architecture-first, separation of concerns, use-case pattern, presentation, error handling, boundaries |
 | [testing.md](testing.md) | What gets tested, quality over quantity, testability as a design constraint |
 | [naming.md](naming.md) | Names for symbols, constants, tests, branches |
