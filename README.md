@@ -83,8 +83,8 @@ earns its place or gets pruned.
 ## 📦 Install
 
 ```bash
-/plugin marketplace add https://github.com/alpenraum/agent-skills
-/plugin install flow@alpenraum-marketplace
+claude plugin marketplace add https://github.com/alpenraum/agent-skills
+claude plugin install flow@alpenraum-marketplace
 ```
 
 Development goes through symlinks instead, so edits are live with no reinstall:
@@ -93,8 +93,12 @@ Development goes through symlinks instead, so edits are live with no reinstall:
 ln -s ~/agent-skills/flow/skills/spec ~/.claude/skills/spec
 ```
 
+[INSTALL.md](INSTALL.md) has the rest — which path to pick, context cost, and what to check
+when a slash command autocompletes nothing.
+
 ## 📄 Also here
 
 - [CLAUDE.md](CLAUDE.md) — how this repo expects work to be done
+- [INSTALL.md](INSTALL.md) — plugin vs symlink, context cost, troubleshooting
 - [flow/BACKLOG.md](flow/BACKLOG.md) — capabilities `/retro` found missing
 - [HARNESS-ENGINEERING.md](HARNESS-ENGINEERING.md), [benchmarks/](benchmarks/) — inherited research, kept as reference
