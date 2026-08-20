@@ -1,6 +1,6 @@
 ---
 name: post-mortem
-description: Introspective end-of-session retrospective — the agent reflects on its OWN context (method, decisions, dead-ends, token spend, estimated API cost, lessons) and writes an honest, root-caused report ending in a reusable playbook. Use at the end of a long or complex session (30min+, multi-phase, sub-agents spawned, or a hard problem solved) when the user says "post-mortem", "retrospective", "session retro", "debrief this session", "what did we learn", "write up this session". Not a log parser — it digs context for the narrative; JSONL usage counters may be aggregated for cost only.
+description: Introspective end-of-session retrospective — the agent reflects on its own context (method, decisions, dead-ends, token spend, lessons) and writes a root-caused report ending in a reusable playbook. Use at the end of a long or complex session, or when the user says 'post-mortem', 'session retro', 'debrief this session', 'what did we learn'.
 argument-hint: "[output-dir]"
 allowed-tools: [Bash, Read, Write]
 model: opus

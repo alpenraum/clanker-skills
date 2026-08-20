@@ -61,7 +61,7 @@ A question that survives all four is asked once — then written back.
 |--------|--------|-------------|
 | [flow](flow/) | 5 | The loop: second-opinion, spec, implement, review-packet, retro |
 | [review](review/) | 3 | Code review, security threat report, whole-repo tech debt audit |
-| [dstoic](dstoic/) | 14 | Core: commits, model routing, scratch, kaizen, context save/load, post-mortem, hooks |
+| [dstoic](dstoic/) | 8 | Core: model/harness/workflow routing, scratch, context save/load, post-mortem, hooks |
 | [cognitive](cognitive/) | 8 | Problem-solving: frame, troubleshoot, investigate, brainstorm, probe, experiment, challenge, benchmark |
 | [openspec](openspec/) | 9 | Full-tier spec flow: plan, design, develop, review, test, reflect, replan, sync |
 | [toolsmith](toolsmith/) | 4 | Authoring: edit-tool, edit-plugin, search-skill, install-dependency |

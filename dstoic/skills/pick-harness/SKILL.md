@@ -1,6 +1,6 @@
 ---
 name: pick-harness
-description: "Diagnose an agent FAILURE and prescribe the cheapest/earliest guardrail to add NEXT — then scaffold it ready to paste. Craft-on-the-fly, friction-driven, minimal: grow a harness to fit the real failure mode instead of designing one upfront. Sibling of /pick-model (picks the model) and /pick-workflow (picks the topology); this picks the GUARDRAIL. Domain-general — any agentic task, not just code. Use when 'agent keeps failing at X', 'it hallucinated/broke the contract/wasted tokens', 'what guardrail do I add', 'harness for X', 'how do I stop it doing Y', or when starting a new agentic task and you want a minimal starter harness. Also has a gated 'pipeline harness' tier for multi-stage agent pipelines (logs+verdicts+clean-room). Recommends + scaffolds; does NOT run the task."
+description: "Diagnose an agent FAILURE and prescribe the cheapest guardrail to add next, scaffolded ready to paste. Use when 'agent keeps failing at X', 'it hallucinated', 'broke the contract', 'wasted tokens', 'what guardrail do I add', 'harness for X', or starting a new agentic task. Recommends; does NOT run the task."
 argument-hint: "<task 'starting X' | friction 'X keeps failing'>"
 allowed-tools: [Read, Glob, Grep, Bash, AskUserQuestion, Skill]
 model: opus

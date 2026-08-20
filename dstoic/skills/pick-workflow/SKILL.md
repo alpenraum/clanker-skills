@@ -1,6 +1,6 @@
 ---
 name: pick-workflow
-description: "Decide HOW work should EXECUTE — linear vs parallel fan-out, sub-agents vs teams vs dynamic Workflow, and the per-step seam — instead of defaulting to linear+single-model. Produces an execution design, does NOT run the task. Delegates the per-step model+effort call to a model-picker skill when the environment has one. Use when authoring/challenging a skill or agent, AND mid-task when deciding how to run real work — 'should I fan this out', 'should this fan out', 'parallel or linear', 'sub-agents or workflow', 'per-step seam', 'execution topology', 'execution architecture'. For a trivial few-item call, early-exit to linear cheaply rather than a full analysis."
+description: "Decide HOW work should EXECUTE — linear vs parallel fan-out, sub-agents vs teams vs dynamic Workflow, and the per-step seam. Use when authoring a skill or agent, or mid-task — 'should I fan this out', 'parallel or linear', 'sub-agents or workflow', 'execution topology'. Produces a design; does NOT run the task."
 argument-hint: "<skill|agent to design>"
 allowed-tools: [Read, Glob, Grep, Skill]
 model: opus

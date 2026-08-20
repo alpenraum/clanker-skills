@@ -26,20 +26,14 @@ flowchart LR
 
 | Skill | Purpose |
 |-------|---------|
-| `/commit-repo` | 🗂️ Streamlined git commit with single human gate |
 | `/pick-model` | 🎯 Recommend optimal model (haiku/sonnet/opus) for the task |
 | `/pick-workflow` | 🧩 Design a skill/agent's execution topology (linear/sub-agents/Workflow); calls `/pick-model` per step |
 | `/pick-harness` | 🛡️ Diagnose an agent failure and scaffold the cheapest guardrail to add next |
-| `/plan-context` | 📐 Turn an in-session analysis into a resumable, traceable `plan-<chantier>.md` (dashboard + journal + lots closing on a command), then design its execution |
 | `/save-context` | 💾 Save session state to CONTEXT-llm.md |
-| `/checkpoint` | 🥩 Capture verbatim "meat" (exact wording, rejected paths, live reasoning) → CHECKPOINT-llm.md |
 | `/load-context` | 📥 Resume session from CONTEXT-llm.md |
 | `/instruct-compact` | 🧭 Steer `/compact` to keep signal, drop noise |
-| `/meta-prompt` | 🔁 RELIANCE recursive ledger for multi-session guided tasks |
 | `/post-mortem` | 🪞 Introspective end-of-session retrospective (tokens, dead-ends, playbook) |
 | `/scratch` | 🗒️ Session scratch pad for parking side-thoughts |
-| `/kaizen` | ⚡ Capture friction with any Praxis artifact |
-| `/dump-output` | 📤 Toggle auto-dump of output to `.dump/` |
 
 Plus: 3 hooks (praxis-dir guard, tmux notifications, debug dumps) and 1 agent (devil-advocate). _(Retrospect-capture, list-context-sync, session-pin & recent-notes hooks now live in the `experimental` plugin — staged, gated off.)_
 
@@ -50,12 +44,12 @@ Plus: 3 hooks (praxis-dir guard, tmux notifications, debug dumps) and 1 agent (d
 ```bash
 /pick-model should I use haiku or opus for this code review
 /scratch park this thought about the auth refactor
-/commit-repo
+/save-context
 ```
 
 ## 📦 Version
 
-`0.52.0` · 14 skills · 1 agent · 3 hooks
+`0.53.0` · 8 skills · 1 agent · 3 hooks
 
 ---
 
