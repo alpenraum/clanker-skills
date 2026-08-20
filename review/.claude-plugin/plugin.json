@@ -1,0 +1,11 @@
+{
+  "name": "review",
+  "description": "Code review and audit: strict senior-engineer quality review, read-only security vulnerability analysis, and whole-repo tech debt audit.",
+  "version": "0.1.0",
+  "author": {
+    "name": "alpenraum",
+    "url": "https://github.com/alpenraum"
+  },
+  "repository": "https://github.com/alpenraum/agent-skills",
+  "license": "MIT"
+}

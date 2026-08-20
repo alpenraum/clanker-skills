@@ -59,4 +59,4 @@ Plus: 3 hooks (praxis-dir guard, tmux notifications, debug dumps) and 1 agent (d
 
 ---
 
-📚 **Full catalog:** [README-full.md](../README-full.md) · 🧭 **Philosophy:** [PHILOSOPHY.md](../PHILOSOPHY.md)
+📚 **Repo overview:** [README.md](../README.md) · 🔁 **Working loop:** [flow](../flow/README.md)

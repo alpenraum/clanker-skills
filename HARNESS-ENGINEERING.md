@@ -2,7 +2,7 @@
 
 > **Harness** = everything in an AI agent except the model itself. **Harness engineering** = the practice of building and maintaining that harness so the agent produces reliable, trustworthy output.
 
-📖 **Reading order**: [README](README.md) (what?) → [PHILOSOPHY](PHILOSOPHY.md) (why?) → [PRACTICE](PRACTICE.md) (deep how) → **this file** (the harness) → [README-full](README-full.md) (every skill)
+📖 Inherited reference from the digital-stoic fork, kept for the guides/sensors model. Not a description of how work runs here — see [CLAUDE.md](CLAUDE.md) and [flow](flow/README.md) for that.
 
 ---
 
@@ -99,7 +99,7 @@ flowchart LR
 
 **Praxis honest assessment: solid L2, aspiring L3.** The building blocks exist (learnings.yaml, retrospectives, devil-advocate) but feedback loops are still **human-triggered, not autonomous**. `/troubleshoot` loads learnings but doesn't auto-update them. `/retrospect-*` extracts patterns but requires manual invocation. The compounding is real but manual — closer to "disciplined L2" than true L3.
 
-This maps to the [Cognitive ROI tiers](PRACTICE.md#-cognitive-roi-return-on-tokens): L1 ≈ Automation, L2 ≈ Assisted Thinking, L3 ≈ Amplified Judgment.
+L1 ≈ automation, L2 ≈ assisted thinking, L3 ≈ amplified judgment.
 
 ---
 
@@ -207,4 +207,4 @@ flowchart LR
 
 ---
 
-🧭 [Philosophy](PHILOSOPHY.md) · 🎯 [Practice](PRACTICE.md) · 📚 [Full Catalog](README-full.md) · 📊 [Benchmarks](benchmarks/)
+📊 [Benchmarks](benchmarks/) · 🔁 [flow](flow/README.md)

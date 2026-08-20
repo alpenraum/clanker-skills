@@ -60,7 +60,7 @@ Grep-discovered — only update if skills/commands were added/removed:
 Files commonly containing counts (dstoic-specific, discovered via grep):
 - `README.md` — plugin table, "By the Numbers"
 - `{plugin}/README.md` — version line with counts
-- `PRACTICE.md` / `PRACTICE-llm.md` — domain classification counts
+- `README.md` — plugin table + skill counts
 
 ## Change Detection Logic
 

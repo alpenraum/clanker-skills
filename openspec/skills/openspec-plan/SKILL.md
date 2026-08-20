@@ -9,6 +9,12 @@ cynefin-verb: analyze
 
 # OpenSpec Plan
 
+> **Full tier of `/spec`.** Reached when a change is a new capability, a protocol/API
+> change, cross-repo, or involves fleet/firmware compatibility. Carry over from `/spec`:
+> the topic **gate plan** (each gate with scope, files, verification, model + effort) and
+> the explicit **out of scope** list. A proposal without gates is not reviewable — big
+> diffs are what gates exist to prevent.
+
 Analysis + reasoning engine for change proposals. Assumes decision made (via /brainstorm or direct request).
 
 ## Workflow: Analyze → Reason → Generate

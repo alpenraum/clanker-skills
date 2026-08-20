@@ -1,0 +1,11 @@
+{
+  "name": "flow",
+  "description": "The five-stage working loop: independent analysis, tiered spec with topic gates and model routing, gated implementation that never assumes, review hand-over, and a retro that writes back to the conventions database.",
+  "version": "0.1.0",
+  "author": {
+    "name": "alpenraum",
+    "url": "https://github.com/alpenraum"
+  },
+  "repository": "https://github.com/alpenraum/agent-skills",
+  "license": "MIT"
+}

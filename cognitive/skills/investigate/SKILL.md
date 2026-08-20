@@ -1,6 +1,6 @@
 ---
 name: investigate
-description: "Deep proactive analysis for complex technical problems requiring upfront thinking and design. Use when: investigate, deep dive, technical spike, design strategy, complex multi-constraint problem, figure out how to, how should I approach. NOT for errors (use troubleshoot) or option brainstorming (use brainstorm)."
+description: "Deep proactive analysis for complex technical problems requiring upfront thinking and design. Use when: investigate, deep dive, technical spike, design strategy, complex multi-constraint problem, figure out how to, how should I approach. NOT for errors (use troubleshoot), option brainstorming (use brainstorm), or an independent second read where the user withholds their own theory (use second-opinion)."
 allowed-tools: WebSearch, WebFetch, AskUserQuestion, Read, Write, Glob, Grep, Task
 model: opus
 context: main

@@ -18,4 +18,4 @@ Hooks are pre-configured in `hooks.json`. Just ensure dependencies are installed
 
 ---
 
-📚 **Full docs:** [README-full.md](README-full.md)
+📚 **Plugin docs:** [dstoic/README.md](../README.md)

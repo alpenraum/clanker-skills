@@ -1,6 +1,6 @@
 ---
 name: kaizen
-description: Capture friction with any Praxis artifact (skill, CLAUDE.md, rule, workflow) in under 30 seconds. Use when user says "kaizen", "log friction", "this annoyed me", or invokes `/kaizen <target> <note>`. One-shot append to `/praxis/thinking/kaizen/<target>.jsonl` — no editor, no follow-up questions, no context switch. Friction signal (fix existing), distinct from lazy skills (build new).
+description: Capture friction with any Praxis artifact (skill, CLAUDE.md, rule, workflow) in under 30 seconds. Use when user says "kaizen", "log friction", "this annoyed me", or invokes `/kaizen <target> <note>`. One-shot append to `$KAIZEN_DIR/<target>.jsonl` (default `~/agent-skills/.kaizen/`, read by `/retro`) — no editor, no follow-up questions, no context switch. Friction signal (fix existing), distinct from lazy skills (build new).
 model: sonnet
 allowed-tools: [Bash]
 ---
@@ -23,7 +23,7 @@ Single Bash call. Slugify target (lowercase, ` ./` → `-`), append one JSON lin
 
 ```bash
 SLUG=$(echo "<target>" | tr '[:upper:]' '[:lower:]' | tr ' ./' '---')
-DIR=/praxis/thinking/kaizen
+DIR="${KAIZEN_DIR:-$HOME/agent-skills/.kaizen}"
 mkdir -p "$DIR"
 FILE="$DIR/$SLUG.jsonl"
 NOTE_JSON=$(printf '%s' "<note>" | python3 -c 'import json,sys;print(json.dumps(sys.stdin.read()))')

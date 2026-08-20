@@ -1,5 +1,0 @@
-output/*
-!output/.gitkeep
-sandbox/*
-!sandbox/.gitkeep
-.env

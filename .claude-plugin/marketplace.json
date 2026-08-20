@@ -1,8 +1,9 @@
 {
-  "name": "digital-stoic-marketplace",
-  "description": "Cognitive development plugins for Claude Code. Live experiments in AI collaboration.",
+  "name": "alpenraum-marketplace",
+  "description": "Finn's Claude Code plugins \u2014 the five-stage working loop, review skills, and an inherited archive from the digital-stoic fork.",
   "owner": {
-    "name": "dstoic"
+    "name": "alpenraum",
+    "url": "https://github.com/alpenraum"
   },
   "metadata": {
     "version": "0.43.0"
@@ -66,8 +67,8 @@
     {
       "name": "toolsmith",
       "source": "./toolsmith",
-      "description": "Plugin and skill authoring: create/edit skills, agents, plugins, CLAUDE.md files, search skills, manage dependencies",
-      "version": "0.37.3",
+      "description": "Plugin and skill authoring: create/edit skills, agents, plugins, search skills, manage dependencies",
+      "version": "0.38.0",
       "author": {
         "name": "dstoic"
       },
@@ -161,6 +162,28 @@
       },
       "license": "MIT",
       "repository": "https://github.com/digital-stoic-org/agent-skills"
+    },
+    {
+      "name": "review",
+      "source": "./review",
+      "description": "Code review and audit: strict senior-engineer quality review, read-only security vulnerability analysis, and whole-repo tech debt audit",
+      "version": "0.1.0",
+      "author": {
+        "name": "alpenraum"
+      },
+      "license": "MIT",
+      "repository": "https://github.com/alpenraum/agent-skills"
+    },
+    {
+      "name": "flow",
+      "source": "./flow",
+      "description": "Five-stage working loop: second-opinion analysis, tiered spec with topic gates + model routing, gated implementation with zero assumptions, review packets, retro that writes back to conventions",
+      "version": "0.1.0",
+      "author": {
+        "name": "alpenraum"
+      },
+      "license": "MIT",
+      "repository": "https://github.com/alpenraum/agent-skills"
     }
   ]
 }
