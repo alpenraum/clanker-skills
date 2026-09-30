@@ -28,7 +28,7 @@ grep -rn "TODO" "$CONV" | head -20
 ```
 
 Session signal worth mining: questions that got asked, questions that should have been
-asked, gates that were too big, points where Finn corrected course, work that got redone.
+asked, gates that were too big, points where the user corrected course, work that got redone.
 
 ## 2. Classify each friction point
 
@@ -36,7 +36,7 @@ asked, gates that were too big, points where Finn corrected course, work that go
 |---|---|
 | Question that a convention should have answered | `$CONV/<file>.md` or repo `docs/conventions.md` |
 | Missing project fact (architecture, ownership, quirk) | repo `docs/conventions.md` — **never** the repo's `CLAUDE.md` |
-| Fact about how Finn works | `~/.claude/projects/-Users-finnzimmer-agent-skills/memory/` |
+| Fact about how the user works | `~/.claude/projects/-Users-the userzimmer-agent-skills/memory/` |
 | Skill behaved wrong or missed a step | the `SKILL.md` itself |
 | Gate was too big / wrongly split | `$CONV/general.md` gate rules |
 | Capability that does not exist yet | skill backlog (`flow/BACKLOG.md`) |
@@ -53,7 +53,7 @@ Make the edits. For each, show a one-line diff summary. Rules:
   file, and get a line in `MEMORY.md`.
 - Skill edits are surgical. Do not rewrite a skill to fix one missed step.
 - Never record what the code or git history already says.
-- **A project repo's `CLAUDE.md` is read-only.** It is authored by Finn and his team; new
+- **A project repo's `CLAUDE.md` is read-only.** It is authored by the user and his team; new
   rules go to that repo's `docs/conventions.md` or to `$CONV`, never into `CLAUDE.md`.
 
 ## 4. Score the loop
@@ -72,5 +72,5 @@ Then one sentence: the single change most likely to reduce next task's friction.
 
 ## 5. Confirm
 
-Ask once, batched, only about entries where the right rule is genuinely Finn's call — not
+Ask once, batched, only about entries where the right rule is genuinely the user's call — not
 about whether to record them. Then report what changed as a file list.

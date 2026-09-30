@@ -18,13 +18,16 @@ Every question the flow skills would otherwise ask you lives here. The rule:
 | File | Answers |
 |------|---------|
 | [general.md](general.md) | Working agreement, gates, Boy Scout rule, clean code (YAGNI/KISS), comments, code-level style, design system |
-| [architecture.md](architecture.md) | Architecture-first, separation of concerns, use-case pattern, presentation, error handling, boundaries |
+| [design.md](design.md) | Visual identity across apps: colour roles and tone rules, contrast, typography, shape, spacing, components, icons, motion, voice |
+| [architecture.md](architecture.md) | Architecture-first, separation of concerns, use-case pattern, changing existing code, presentation, error handling, boundaries |
 | [testing.md](testing.md) | What gets tested, quality over quantity, testability as a design constraint |
+| [debugging.md](debugging.md) | Investigating a live system: instruments, evidence windows, acting on hardware, guards you add |
 | [naming.md](naming.md) | Names for symbols, constants, tests, branches |
 | [logging.md](logging.md) | Levels, format, what never gets logged |
 | [git.md](git.md) | Commit approval, PR shape, what stays read-only |
 | [dart-flutter.md](dart-flutter.md) | Dart/Flutter/riverpod specifics |
 | [kotlin.md](kotlin.md) | Kotlin/Gradle/Compose specifics |
+| [typescript.md](typescript.md) | TypeScript/NestJS/RxJS specifics — Observables never Promises |
 | [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md) | Decisions still needed, and rules deliberately not adopted |
 
 ## Status
@@ -32,7 +35,7 @@ Every question the flow skills would otherwise ask you lives here. The rule:
 Live. `TODO` marks an unanswered question — the first time flow hits one it asks you once,
 records the answer, and drops the marker. Density grows by use, not by upfront authoring.
 
-Rules arrive from three places: what Finn states directly, what `/retro` extracts from
+Rules arrive from three places: what the user states directly, what `/retro` extracts from
 friction, and what gets harvested from project memory. A rule that was considered and
 rejected goes to `OPEN-QUESTIONS.md` so it does not get re-proposed.
 

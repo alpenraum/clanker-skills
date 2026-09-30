@@ -21,7 +21,7 @@ to decide.
 
 Read the spec. Read the gate. Restate in two lines: what changes, what proves it. If the
 gate's model/effort recommendation differs from the live session, say so before starting —
-Finn decides whether to switch.
+the user decides whether to switch.
 
 ### 2. Build
 
@@ -66,7 +66,7 @@ Append to the spec's **Deviations**:
 
 ```
 ### Gate N
-- <deviation> — reason: <why> — decided by: <Finn | convention file:line>
+- <deviation> — reason: <why> — decided by: <the user | convention file:line>
 - noted, not done: <adjacent finding>
 ```
 
@@ -74,12 +74,14 @@ Then run `/review-packet <slug> <gate>` and **stop**.
 
 > **Gate N complete. Review?**
 
-No work on gate N+1 until Finn accepts. Not "starting the next one while you look" — stop.
+No work on gate N+1 until the user accepts. Not "starting the next one while you look" — stop.
 
 ## Hard rules
 
 - Spec silent on something behavioural → ask. Never infer intent.
 - Spec wrong → stop, say so, propose the amendment. Do not implement around a wrong spec.
 - Commit only when asked. Commit scope gets approved first.
-- Never delete or rewrite a test to make a gate pass.
+- Never weaken or delete a test to hide a failing behaviour. Tests a change turned red are triaged
+  with `/write-tests triage` first; a test for a removed or superseded behaviour is deleted and the
+  deletion logged in Deviations.
 - Secrets never enter code, logs, or a prompt.

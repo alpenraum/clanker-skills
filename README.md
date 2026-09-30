@@ -1,6 +1,6 @@
 # 🛠 agent-skills
 
-> Finn's Claude Code toolkit. The working loop, the conventions that feed it, and an
+> the user's Claude Code toolkit. The working loop, the conventions that feed it, and an
 > inherited archive.
 
 ## 🔁 The loop
@@ -13,7 +13,7 @@ flowchart LR
     A["🔍 Analyse<br/>/second-opinion"] --> S["📐 Spec<br/>/spec"]
     S --> I["⚙️ Implement<br/>/implement"]
     I --> RP["📦 Review packet<br/>/review-packet"]
-    RP -->|"Finn reviews, fully"| I
+    RP -->|"the user reviews, fully"| I
     RP --> R["🔁 Retro<br/>/retro"]
     R --> C[("📚 conventions/")]
     C -.->|"answers, so nothing<br/>gets asked twice"| S
@@ -33,10 +33,10 @@ flowchart LR
 
 | Block | Rule |
 |---|---|
-| **Analyse** | Decisions rest on facts, never assumptions. Analysis is often requested *after* Finn's own, with his theory withheld — an independent read is the product. |
+| **Analyse** | Decisions rest on facts, never assumptions. Analysis is often requested *after* the user's own, with his theory withheld — an independent read is the product. |
 | **Spec** | Scope exact, out-of-scope explicit, gates by topic, model + effort chosen per gate. Tiered: no ceremony for a refactor, full proposal for a protocol change. |
 | **Implement** | Transcription, not decision-making. Unknown → look it up; unanswerable → hard stop with options. Never an assumption. |
-| **Review** | Finn's, entirely. The machine prepares a packet and gets out of the way. |
+| **Review** | the user's, entirely. The machine prepares a packet and gets out of the way. |
 | **Retro** | The only stage that edits the system: friction becomes a rule, a memory, or a skill change. |
 
 **Gates** are the load-bearing part: 2k-line diffs are unreviewable, so anything over
@@ -76,7 +76,7 @@ A question that survives all four is asked once — then written back.
 | [coach](coach/) | 1 | Coaching: CLEAR + GROW |
 | [lazy](lazy/) | 1 | Demand capture: placeholder skills that measure need before building |
 
-`flow`, `review` and `conventions/` are Finn's. The rest is inherited from the
+`flow`, `review` and `conventions/` are the user's. The rest is inherited from the
 [digital-stoic](https://github.com/digital-stoic-org/agent-skills) fork and kept until it
 earns its place or gets pruned.
 

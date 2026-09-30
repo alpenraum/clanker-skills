@@ -11,7 +11,7 @@ user-invocable: true
 
 # Review Packet
 
-Finn reviews everything himself. This makes that review cheap and ordered — it does not
+the user reviews everything himself. This makes that review cheap and ordered — it does not
 substitute for it and never says whether the code is good.
 
 **Target:** $ARGUMENTS

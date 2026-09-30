@@ -83,7 +83,7 @@ status: draft
 <from §4>
 
 ## Verification
-- <command or observation that proves each gate, incl. what Finn should see>
+- <command or observation that proves each gate, incl. what the user should see>
 
 ## Conventions applied
 - <rule> — source: <file:line>
@@ -99,7 +99,7 @@ Path: `docs/specs/<slug>.md` in the **target repo**, committed with the change.
 
 ## 4. Plan the gates
 
-Split by **topic**, never by file count. A gate is a unit Finn can review and reason about
+Split by **topic**, never by file count. A gate is a unit the user can review and reason about
 on its own — reviewing 2k lines at once is the thing being prevented here.
 
 Split when: expected diff > ~400 lines · more than one topic · a layer boundary is crossed ·

@@ -1,6 +1,6 @@
 # agent-skills
 
-Finn's Claude Code toolkit. Working rules for any session in this repo — and the reference
+the user's Claude Code toolkit. Working rules for any session in this repo — and the reference
 copy of how he expects work to run in every other repo.
 
 ## Non-negotiable
@@ -14,7 +14,7 @@ copy of how he expects work to run in every other repo.
 - **Review is his, fully.** Never substitute a machine judgement for it.
 - **Secrets never** enter code, logs, commits, or prompts. A pasted credential gets flagged
   for rotation, not used.
-- **Other repos' `CLAUDE.md` files are read-only.** They are authored by Finn and his team.
+- **Other repos' `CLAUDE.md` files are read-only.** They are authored by the user and his team.
   Read them for context; new rules go to that repo's `docs/conventions.md` or to
   `$FLOW_CONVENTIONS`. This file is the one exception — it describes this repo.
 

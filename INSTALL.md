@@ -73,7 +73,7 @@ for d in ~/agent-skills/flow/skills/*/; do
 done
 ```
 
-Currently symlinked: `flow` (5) and `review` (3) — Finn's own, the ones under active edit.
+Currently symlinked: `flow` (5) and `review` (3) — the user's own, the ones under active edit.
 Everything else is inherited and belongs on the plugin path.
 
 ## 💰 Context cost

@@ -11,7 +11,7 @@ user-invocable: true
 
 # Second Opinion
 
-Finn has usually already analysed this and is withholding the conclusion on purpose. The
+the user has usually already analysed this and is withholding the conclusion on purpose. The
 value of this skill is **non-contamination**: an independent line of reasoning he can
 agree with, or that contradicts him usefully.
 
